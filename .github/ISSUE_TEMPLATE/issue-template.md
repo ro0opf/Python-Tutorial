@@ -1,20 +1,3 @@
----
-name: Issue template
-about: Describe this issue template's purpose here.
-title: ''
-labels: ''
-assignees: ro0opf
-
----
-
----
-name: ISSUE_TEMPLATE
-about: Describe this issue template's purpose here.
-title: ''
-labels: ''
-assignees: ''
-
----
 
 ### You want to:
 
@@ -32,7 +15,6 @@ assignees: ''
 
 
 ### Expected behaviour
-
 *What is expected?*
 
 ### Setup
