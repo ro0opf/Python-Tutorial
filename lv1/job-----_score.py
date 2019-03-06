@@ -16,18 +16,22 @@ def _get(index, title_list, score_list):
         title_list.append(title.text)
         score_list.append(score.text)
     
-    print('{0}'.format(proc))
+    print("{}".format(proc))
     return
 
 if __name__ == '__main__':
     start_time = time.time()
     
-    title_list = []
-    score_list = []
+    title_list = mp.Manager().list()
+    score_list = mp.Manager().list()
+
+    pool = mp.Pool(5)
 
     for i in range(1,30):
-        _get(i,title_list, score_list)
+        pool.apply_async(_get, args=(i, title_list, score_list))
 
+    pool.close()
+    pool.join()
     count = 1
     for t in title_list:
         print("{}{} {} {}".format(count, "위", t, score_list[count-1]))
