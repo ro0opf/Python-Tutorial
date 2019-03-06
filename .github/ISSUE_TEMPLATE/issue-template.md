@@ -1,3 +1,11 @@
+---
+name: Issue template
+about: Describe this issue template's purpose here.
+title: ''
+labels: ''
+assignees: ''
+
+---
 
 ### You want to:
 
@@ -15,6 +23,7 @@
 
 
 ### Expected behaviour
+
 *What is expected?*
 
 ### Setup
