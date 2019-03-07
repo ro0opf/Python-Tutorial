@@ -25,7 +25,7 @@ if __name__ == '__main__':
     title_list = mp.Manager().list()
     score_list = mp.Manager().list()
 
-    pool = mp.Pool(5)
+    pool = mp.Pool(mp.cpu_count())
 
     for i in range(1,30):
         pool.apply_async(_get, args=(i, title_list, score_list))
