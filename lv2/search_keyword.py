@@ -29,9 +29,6 @@ def saveImage(keyword, imageUrl):
 
 if __name__ == '__main__':
     start_time = time.time()
-    
-    title_list = mp.Manager().list()
-    score_list = mp.Manager().list()
 
     pool = mp.Pool(mp.cpu_count())
     while(True):
