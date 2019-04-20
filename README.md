@@ -13,6 +13,7 @@
 문법이 쉬워 러닝커브가 낮은 언어에 속한다. 실사용률과 생산성이 높고 접근성과 응용력이 좋다.
 
 [공식 홈페이지](https://www.python.org/)
+
 [공식 Github](https://github.com/python/cpython)
 
 <b id="2"></b>
